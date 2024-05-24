@@ -27,7 +27,7 @@ jobs:
             --capabilities CAPABILITY_NAMED_IAM \
             --parameter-overrides \
                 MasterUsername=${{ secrets.DB_MASTER_USERNAME }} \
-                MasterUserPassword=${{ secrets.DB_MASTER_PASSWORD }}
+                DBMasterUserPassword=${{ secrets.DB_MASTER_PASSWORD }}
 
       - name: Initialize Database
         run: |
