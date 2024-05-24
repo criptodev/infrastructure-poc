@@ -23,7 +23,7 @@ jobs:
         run: |
           aws cloudformation deploy \
             --template-file rds.yml \
-            --stack-name my-rds-stack \
+            --stack-name my-rds-stack-1 \
             --capabilities CAPABILITY_NAMED_IAM \
             --parameter-overrides \
                 MasterUsername=${{ secrets.DB_MASTER_USERNAME }} \
@@ -40,5 +40,5 @@ jobs:
         run: |
           aws cloudformation deploy \
             --template-file ecs.yml \
-            --stack-name my-ecs-stack \
+            --stack-name my-ecs-stack-1 \
             --capabilities CAPABILITY_NAMED_IAM
