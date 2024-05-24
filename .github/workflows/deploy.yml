@@ -26,7 +26,7 @@ jobs:
             --stack-name my-rds-stack-1 \
             --capabilities CAPABILITY_NAMED_IAM \
             --parameter-overrides \
-                MasterUsername=${{ secrets.DB_MASTER_USERNAME }} \
+                DBMasterUsername=${{ secrets.DB_MASTER_USERNAME }} \
                 DBMasterUserPassword=${{ secrets.DB_MASTER_PASSWORD }}
 
       - name: Initialize Database
