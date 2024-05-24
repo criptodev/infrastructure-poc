@@ -13,15 +13,6 @@ Resources:
       PubliclyAccessible: true
       DBName: MyDatabase
 
-  DBSubnetGroup:
-    Type: AWS::RDS::DBSubnetGroup
-    Properties:
-      DBSubnetGroupDescription: "Subnet group for RDS instance"
-      SubnetIds:
-        - subnet-0bb1c79de3EXAMPLE
-        - subnet-064cd4c5acEXAMPLE
-
-Parameters:
   DBMasterUsername:
     Type: String
     NoEcho: true
